@@ -54,7 +54,7 @@
     "coveralls": "^3.0.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3",
+    "husky": "^0.11.9",
     "mocha": "^4.0.1",
     "node-fetch": "^1.7.3",
     "nyc": "^11.4.1",
