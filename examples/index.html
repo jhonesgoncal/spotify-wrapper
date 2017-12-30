@@ -12,16 +12,18 @@
 
   <script>
 
-   const albums = spotifyWrapper.searchAlbums('Incubus');
-   const albumsEl = document.getElementById('#albums');
+   const albums = SpotifyWrapper.searchAlbums('Muse');
+   const albumsEl = document.getElementById('albums');
 
    albums
      .then(data => {
        markup = data.albums.items.map(item =>
          `<img src='${item.images[0].url}' alt='${item.name}' />`).join('');
+
+       albumsEl.innerHTML = markup;
      });
 
-   albumsEl.innerHTML = markup;
+
 
   </script>
 </body>
