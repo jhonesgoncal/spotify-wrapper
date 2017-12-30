@@ -11,8 +11,10 @@
   <script src="../dist/spotify-wrapper.umd.min.js"></script>
 
   <script>
-
-   const albums = SpotifyWrapper.searchAlbums('Muse');
+   const spotify = new SpotifyWrapper({
+    token: 'BQCumPCEL1ktHmMFgeUyWlbMwU7Ivb3LhHXJSgtMzmAE6HOZjQOQ7VbJVxgp3GkAd6nvGCyr2jVmRALKiPuXsRsJZOwWsM6CY4bk_j3edIlD0E0Jt37KI0YwsE6cfJsBtvhgzFW4s96dD9E6NqAVRiPsbVe9DbNEcUg3Crg89xqNIO3kgQin0agDyYU0mrCm-6rAXdUw0bwz0jNjwyG6O_RnRb6dkhKCopuexjwrPaIbPyz0XFq3kDYv6a9bC2oSlzs5wdb512BO_WdNwlrSKAdlB3A0Xg',
+   });
+   const albums = spotify.search.albums('Link Park');
    const albumsEl = document.getElementById('albums');
 
    albums
@@ -22,8 +24,6 @@
 
        albumsEl.innerHTML = markup;
      });
-
-
 
   </script>
 </body>
