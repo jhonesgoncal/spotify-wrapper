@@ -10,9 +10,15 @@ export default {
     library: 'spotifyWrapper',
   },
   devtool: 'source-map',
-  module: {
-    loaders: [
-      {test: /\.js$/, loader: 'babel-loader', include},
+   module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: [{
+          loader: 'babel-loader',
+        }]
+      }
     ]
   }
-}
+};
