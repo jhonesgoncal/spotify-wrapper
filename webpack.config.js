@@ -1,4 +1,5 @@
 import { join } from 'path';
+import { webpack } from 'webpack';
 
 const include = join(__dirname, 'src');
 
