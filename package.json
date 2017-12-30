@@ -1,6 +1,6 @@
 {
   "name": "jg-spotify-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wrapper to work with the Spotify Web API",
   "main": "lib/index.js",
   "scripts": {
